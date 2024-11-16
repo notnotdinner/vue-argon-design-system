@@ -7,6 +7,7 @@ import Landing from "./views/Landing.vue";
 import Login from "./views/Login.vue";
 import Register from "./views/Register.vue";
 import Profile from "./views/Profile.vue";
+import Dashboard from "./views/Dashboard.vue";
 
 Vue.use(Router);
 
@@ -15,10 +16,10 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "components",
+      name: "dashboard",
       components: {
         header: AppHeader,
-        default: Components,
+        default: Dashboard,
         footer: AppFooter
       }
     },
